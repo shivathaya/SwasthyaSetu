@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {
-  const user = JSON.parse(localStorage.getItem("user"));
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
 
-  if (!user) {
-    return <Navigate to="/login" />;
+  useEffect(() => {
+    // Check if the sessionStorage has a session flag
+    const session = sessionStorage.getItem("isAuthenticated");
+
+    if (session) {
+      setIsAuthenticated(true);  // Session exists in sessionStorage
+    } else {
+      setIsAuthenticated(false); // No session flag found
+    }
+  }, []);
+
+  if (isAuthenticated === null) {
+    return <div>Loading...</div>;  // Show loading while checking authentication status
   }
 
-  return children;
+  if (!isAuthenticated) {
+    return <Navigate to="/login" />;  // Redirect to login if no session
+  }
+
+  return children;  // If session is valid, render the protected children
 };
 
 export default ProtectedRoute;

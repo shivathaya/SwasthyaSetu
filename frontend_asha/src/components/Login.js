@@ -14,12 +14,13 @@ const Login = () => {
       const response = await axios.post("http://localhost:8083/ashaUserAuth/login", {
         username,
         password,
-      });
+      },{ withCredentials: true });
 
       if (response.data === "Invalid username or password!") {
         alert(response.data);
       } else {
-        localStorage.setItem("user", JSON.stringify(response.data));
+        //localStorage.setItem("user", JSON.stringify(response.data));
+        sessionStorage.setItem("isAuthenticated", "true");
         navigate("/dashboard");
       }
     } catch (error) {

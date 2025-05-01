@@ -1,0 +1,1251 @@
+2025-04-27 20:05:28 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10196 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-27 20:05:28 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-27 20:05:28 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-27 20:05:28 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-27 20:05:28 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 20:05:28 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+2025-04-27 20:05:29 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-27 20:05:29 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:05:29 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-27 20:05:29 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-27 20:05:29 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-27 20:05:29 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1698 ms
+2025-04-27 20:05:29 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-27 20:05:30 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@401fa848
+2025-04-27 20:05:30 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-27 20:05:30 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 20:05:30 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-27 20:05:30 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-27 20:05:30 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 20:05:30 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-27 20:05:30 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-27 20:05:31 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 20:05:31 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:05:32 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 20:05:32 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 129e8162-4406-418a-b8ba-81d914bc08de
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-27 20:05:32 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-27 20:05:39 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-27 20:05:39 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:05:39 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-27 20:05:39 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 12.149 seconds (process running for 13.652)
+2025-04-27 20:06:07 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 20:06:07 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-27 20:06:07 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2025-04-27 20:06:08 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 20:06:08 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 20:06:40 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-27 20:06:40 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-27 20:06:40 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:06:40 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-04-27 20:06:40 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:06:40 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:06:40 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2025-04-27 20:06:40 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2025-04-27 20:06:40 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10196 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-27 20:06:40 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-27 20:06:40 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 20:06:40 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-04-27 20:06:40 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-27 20:06:40 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:06:40 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-27 20:06:40 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-27 20:06:40 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-27 20:06:40 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 445 ms
+2025-04-27 20:06:40 INFO  HikariDataSource:109 - HikariPool-2 - Starting...
+2025-04-27 20:06:40 INFO  HikariPool:554 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d632a6a
+2025-04-27 20:06:40 INFO  HikariDataSource:122 - HikariPool-2 - Start completed.
+2025-04-27 20:06:40 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 20:06:40 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-27 20:06:40 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 20:06:40 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-27 20:06:40 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-27 20:06:40 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 20:06:40 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:06:41 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 20:06:41 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: a5f442b3-d784-477b-b0ea-a729aee03a90
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-27 20:06:41 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-27 20:06:41 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-27 20:06:41 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:06:41 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-27 20:06:41 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 1.009 seconds (process running for 75.181)
+2025-04-27 20:06:41 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-04-27 20:07:03 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 20:07:03 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-27 20:07:03 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-04-27 20:07:06 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 20:07:06 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 20:07:06 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-27 20:08:49 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 20:08:49 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 20:09:39 DEBUG SQL:135 - 
+    insert 
+    into
+        child_birth
+        (date, hospital_name, name, parents_name, time, user_id, village_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-04-27 20:09:45 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 20:09:45 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 20:26:43 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 17 class path changes (0 additions, 17 deletions, 0 modifications)
+2025-04-27 20:26:43 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-27 20:26:43 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:26:43 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-04-27 20:26:43 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:26:43 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:26:43 INFO  HikariDataSource:349 - HikariPool-2 - Shutdown initiated...
+2025-04-27 20:26:43 INFO  HikariDataSource:351 - HikariPool-2 - Shutdown completed.
+2025-04-27 20:26:48 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10196 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-27 20:26:48 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-27 20:26:49 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 20:26:49 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-04-27 20:26:49 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-27 20:26:49 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-27 20:26:49 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-27 20:26:49 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-27 20:26:49 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 479 ms
+2025-04-27 20:26:49 INFO  HikariDataSource:109 - HikariPool-3 - Starting...
+2025-04-27 20:26:49 INFO  HikariPool:554 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb2d8e7
+2025-04-27 20:26:49 INFO  HikariDataSource:122 - HikariPool-3 - Start completed.
+2025-04-27 20:26:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 20:26:49 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-27 20:26:49 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 20:26:49 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-27 20:26:49 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-27 20:26:49 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 20:26:49 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:26:49 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 20:26:49 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 8c9c2da6-8bbf-435e-b8b7-06140d2108a7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-27 20:26:49 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-27 20:26:49 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-27 20:26:49 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:26:49 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-27 20:26:49 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 1.048 seconds (process running for 1283.603)
+2025-04-27 20:26:49 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-04-27 20:27:21 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-27 20:27:22 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-27 20:27:22 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:27:22 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-04-27 20:27:22 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:27:22 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:27:22 INFO  HikariDataSource:349 - HikariPool-3 - Shutdown initiated...
+2025-04-27 20:27:22 INFO  HikariDataSource:351 - HikariPool-3 - Shutdown completed.
+2025-04-27 20:27:22 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10196 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-27 20:27:22 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-27 20:27:22 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 20:27:22 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-04-27 20:27:23 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-27 20:27:23 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:27:23 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-27 20:27:23 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-27 20:27:23 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-27 20:27:23 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 686 ms
+2025-04-27 20:27:23 INFO  HikariDataSource:109 - HikariPool-4 - Starting...
+2025-04-27 20:27:23 INFO  HikariPool:554 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35395c99
+2025-04-27 20:27:23 INFO  HikariDataSource:122 - HikariPool-4 - Start completed.
+2025-04-27 20:27:23 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 20:27:23 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-27 20:27:23 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 20:27:23 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-27 20:27:23 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-27 20:27:23 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 20:27:23 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 20:27:23 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 20:27:23 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 23baa89d-bdff-4923-8eb1-404faf0dd7f7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-27 20:27:23 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-27 20:27:23 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-27 20:27:23 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-27 20:27:23 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-27 20:27:23 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 1.208 seconds (process running for 1317.365)
+2025-04-27 20:27:23 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-04-27 21:27:59 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 24176 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-27 21:27:59 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-27 21:27:59 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-27 21:27:59 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-27 21:28:01 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 21:28:01 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2025-04-27 21:28:02 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-27 21:28:02 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-27 21:28:02 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-27 21:28:02 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-27 21:28:02 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-27 21:28:02 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2622 ms
+2025-04-27 21:28:02 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-27 21:28:03 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4580ac07
+2025-04-27 21:28:03 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-27 21:28:03 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 21:28:03 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-27 21:28:03 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-27 21:28:04 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 21:28:04 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-27 21:28:04 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-27 21:28:07 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 21:28:07 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 21:28:08 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 21:28:08 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: aa24b15e-adfc-4ac3-b107-89b92790d362
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-27 21:28:08 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-27 21:28:09 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-27 21:28:09 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-27 21:28:09 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-27 21:28:09 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 10.903 seconds (process running for 13.816)
+2025-04-27 21:28:23 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 21:28:23 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-27 21:28:23 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-04-27 21:28:23 WARN  DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.asha.backend_asha.controllers.AshaUserAuthController.login(jakarta.servlet.http.HttpServletRequest,com.asha.backend_asha.models.AshaUser)]
+2025-04-27 21:28:58 WARN  DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.asha.backend_asha.controllers.AshaUserAuthController.login(jakarta.servlet.http.HttpServletRequest,com.asha.backend_asha.models.AshaUser)]
+2025-04-27 21:41:08 WARN  DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2025-04-27 21:42:52 WARN  DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------422070235639421155811265;charset=UTF-8' is not supported]
+2025-04-27 21:44:22 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 21:44:22 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 21:44:22 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-27 21:44:53 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 21:45:27 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 21:51:21 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 21:51:21 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 21:51:21 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-27 21:51:36 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 21:51:59 DEBUG SQL:135 - 
+    insert 
+    into
+        child_birth
+        (date, hospital_name, name, parents_name, time, user_id, village_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-04-27 21:52:23 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 21:55:03 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 21:55:03 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 21:55:03 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-27 21:55:33 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-27 21:57:44 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-27 21:57:44 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-27 21:57:44 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-27 21:58:48 DEBUG SQL:135 - 
+    insert 
+    into
+        child_birth
+        (date, hospital_name, name, parents_name, time, user_id, village_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-04-28 22:07:52 WARN  HikariPool:797 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d9m18s894ms339µs700ns).
+2025-04-28 22:30:29 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 25188 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:30:29 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:30:29 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 22:30:29 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 22:30:30 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:30:30 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:30:32 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:30:32 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:30:32 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:30:32 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:30:32 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:30:32 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3067 ms
+2025-04-28 22:30:32 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-28 22:30:33 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c478b84
+2025-04-28 22:30:33 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-28 22:30:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:30:33 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-28 22:30:33 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:30:34 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:30:34 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:30:34 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:30:37 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:30:37 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:30:37 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:30:37 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 6ba707fa-7e90-47de-bf5c-65266acbb415
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:30:37 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:31:07 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-28 22:31:07 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:31:07 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-28 22:31:07 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 38.858 seconds (process running for 46.12)
+2025-04-28 22:31:49 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 22:31:49 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-28 22:31:49 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-04-28 22:32:02 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-28 22:32:03 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-28 22:32:04 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-28 22:32:56 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-28 22:36:25 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10216 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:36:25 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:36:25 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 22:36:25 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 22:36:26 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:36:26 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:36:27 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:36:27 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:36:27 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:36:27 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:36:27 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:36:27 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2264 ms
+2025-04-28 22:36:27 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-28 22:36:28 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@301da501
+2025-04-28 22:36:28 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-28 22:36:28 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:36:28 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-28 22:36:28 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:36:29 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:36:29 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:36:29 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:36:31 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:36:31 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:36:32 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:36:32 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 5127ffdb-c6b9-4613-8547-e7e8926f684a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:36:32 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:36:56 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-28 22:36:56 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:36:56 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-28 22:36:56 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 32.101 seconds (process running for 34.165)
+2025-04-28 22:38:25 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 22:38:25 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-28 22:38:25 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-04-28 22:38:48 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-28 22:38:48 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-28 22:38:48 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:38:48 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-04-28 22:38:48 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:38:48 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:38:48 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2025-04-28 22:38:48 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2025-04-28 22:38:48 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10216 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:38:48 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:38:49 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:38:49 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:38:49 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:38:49 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:38:49 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:38:49 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:38:49 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:38:49 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 950 ms
+2025-04-28 22:38:49 INFO  HikariDataSource:109 - HikariPool-2 - Starting...
+2025-04-28 22:38:49 INFO  HikariPool:554 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fa263e5
+2025-04-28 22:38:49 INFO  HikariDataSource:122 - HikariPool-2 - Start completed.
+2025-04-28 22:38:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:38:49 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:38:49 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:38:49 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:38:49 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:38:50 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:38:50 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:38:53 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:38:53 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 8a96757c-7901-4778-aa10-229280ec98f0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:38:53 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:40:26 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-28 22:40:26 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:26 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-28 22:40:26 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 98.168 seconds (process running for 244.426)
+2025-04-28 22:40:26 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-04-28 22:40:28 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-28 22:40:28 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-28 22:40:28 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:28 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-04-28 22:40:28 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:28 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:40:28 INFO  HikariDataSource:349 - HikariPool-2 - Shutdown initiated...
+2025-04-28 22:40:28 INFO  HikariDataSource:351 - HikariPool-2 - Shutdown completed.
+2025-04-28 22:40:28 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10216 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:40:28 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:40:28 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:40:28 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:40:29 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:40:29 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:29 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:40:29 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:40:29 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:40:29 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 604 ms
+2025-04-28 22:40:29 INFO  HikariDataSource:109 - HikariPool-3 - Starting...
+2025-04-28 22:40:29 INFO  HikariPool:554 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73ae01df
+2025-04-28 22:40:29 INFO  HikariDataSource:122 - HikariPool-3 - Start completed.
+2025-04-28 22:40:29 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:40:29 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:40:29 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:40:29 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:40:29 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:40:29 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:40:29 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:40:29 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:40:29 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: f8cce935-74e5-4a59-b09e-d133010cec07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:40:29 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:40:33 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-28 22:40:33 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:33 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-28 22:40:33 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 5.358 seconds (process running for 251.351)
+2025-04-28 22:40:33 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-04-28 22:40:50 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 23872 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:40:50 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:40:50 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 22:40:50 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 22:40:51 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:40:51 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:40:52 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:40:52 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:40:52 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:40:52 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:40:52 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:40:52 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2455 ms
+2025-04-28 22:40:52 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-28 22:40:53 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e35b887
+2025-04-28 22:40:53 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-28 22:40:53 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:40:53 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-28 22:40:53 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:40:54 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:40:54 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:40:54 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:41:21 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10736 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:41:21 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:41:21 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 22:41:21 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 22:41:23 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:41:23 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:41:25 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:41:25 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:41:25 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:41:25 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:41:25 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:41:25 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3551 ms
+2025-04-28 22:41:25 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-28 22:41:26 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f3bad98
+2025-04-28 22:41:26 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-28 22:41:26 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:41:26 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-28 22:41:26 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:41:27 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:41:27 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:41:27 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:41:30 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:41:30 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:41:31 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:41:31 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: c7e5c419-05ab-4760-a791-348e3eb39dcb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:41:31 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:43:22 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 28356 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-28 22:43:22 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 22:43:22 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 22:43:22 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 22:43:24 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-28 22:43:24 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
+2025-04-28 22:43:25 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-28 22:43:25 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:43:25 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-28 22:43:25 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-28 22:43:25 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-28 22:43:25 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3115 ms
+2025-04-28 22:43:26 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-28 22:43:26 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17ef7acf
+2025-04-28 22:43:26 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-28 22:43:26 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-28 22:43:26 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-28 22:43:26 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-28 22:43:27 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-28 22:43:27 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-28 22:43:27 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-28 22:43:30 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-28 22:43:30 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 22:43:31 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 22:43:31 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 074df409-69ad-47a3-85f3-7459f60c575e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-28 22:43:31 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-28 22:43:32 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-28 22:43:32 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-28 22:43:32 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-28 22:43:32 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 10.788 seconds (process running for 13.93)
+2025-04-28 22:43:37 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 22:43:37 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-28 22:43:37 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-04-28 22:43:50 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-04-28 22:43:51 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-04-28 22:43:51 INFO  AshaUserAuthController:60 - This is an info message.
+2025-04-28 22:44:12 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-28 22:44:14 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-28 22:45:29 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-28 22:45:29 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-28 22:45:41 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-04-30 19:38:09 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 28680 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-04-30 19:38:09 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-30 19:38:09 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-30 19:38:09 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-30 19:38:11 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-30 19:38:11 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2025-04-30 19:38:12 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-04-30 19:38:12 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-30 19:38:12 INFO  StandardService:173 - Starting service [Tomcat]
+2025-04-30 19:38:12 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-04-30 19:38:12 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-04-30 19:38:12 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3304 ms
+2025-04-30 19:38:12 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-04-30 19:38:13 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@323e9846
+2025-04-30 19:38:13 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-04-30 19:38:13 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-30 19:38:13 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-04-30 19:38:13 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-04-30 19:38:14 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-30 19:38:14 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-04-30 19:38:14 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-30 19:38:15 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-30 19:38:15 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-30 19:38:16 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-30 19:38:16 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: d1951f96-5785-419a-98e2-161dac3e1302
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-30 19:38:16 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-30 19:38:17 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-04-30 19:38:17 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-30 19:38:17 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-30 19:38:17 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 9.182 seconds (process running for 11.57)
+2025-05-01 12:04:49 WARN  HikariPool:797 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h25m36s13ms95µs600ns).
+2025-05-01 12:05:04 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 12:05:04 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-05-01 12:05:04 INFO  DispatcherServlet:554 - Completed initialization in 25 ms
+2025-05-01 12:05:57 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 28216 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-05-01 12:05:57 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 12:05:57 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 12:05:57 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 12:05:58 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 12:05:58 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2025-05-01 12:05:59 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-05-01 12:05:59 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:05:59 INFO  StandardService:173 - Starting service [Tomcat]
+2025-05-01 12:05:59 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-05-01 12:05:59 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-05-01 12:05:59 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2162 ms
+2025-05-01 12:05:59 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-05-01 12:05:59 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7376194f
+2025-05-01 12:05:59 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-05-01 12:05:59 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 12:06:00 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-05-01 12:06:00 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-01 12:06:00 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 12:06:01 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 12:06:01 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 12:06:03 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 12:06:03 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:06:04 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 12:06:04 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 0d23a447-8d27-4d0c-87fc-a9598c912ed4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 12:06:04 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 12:06:05 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-01 12:06:05 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:06:05 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-05-01 12:06:05 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 8.81 seconds (process running for 10.887)
+2025-05-01 12:07:37 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10408 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-05-01 12:07:37 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 12:07:37 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 12:07:37 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 12:07:38 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 12:07:38 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2025-05-01 12:07:39 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-05-01 12:07:39 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:07:39 INFO  StandardService:173 - Starting service [Tomcat]
+2025-05-01 12:07:39 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-05-01 12:07:39 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-05-01 12:07:39 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2059 ms
+2025-05-01 12:07:39 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-05-01 12:07:39 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@391781ab
+2025-05-01 12:07:39 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-05-01 12:07:39 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 12:07:40 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-05-01 12:07:40 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-01 12:07:40 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 12:07:40 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 12:07:40 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 12:07:42 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 12:07:42 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:07:42 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 12:07:42 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 6b1d6b84-9347-4d2c-9e5d-0eafb921497a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 12:07:42 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 12:07:43 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-01 12:07:43 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:07:43 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-05-01 12:07:43 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 6.608 seconds (process running for 8.475)
+2025-05-01 12:07:55 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 12:07:55 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-05-01 12:07:55 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2025-05-01 12:08:02 DEBUG SQL:135 - 
+    select
+        au1_0.id,
+        au1_0.password,
+        au1_0.username 
+    from
+        asha_user au1_0 
+    where
+        au1_0.username=?
+2025-05-01 12:08:02 DEBUG SQL:135 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-01 12:08:02 INFO  AshaUserAuthController:60 - This is an info message.
+2025-05-01 12:08:11 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-05-01 12:08:12 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-05-01 12:09:12 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-05-01 12:09:13 DEBUG SQL:135 - 
+    select
+        cb1_0.id,
+        cb1_0.date,
+        cb1_0.hospital_name,
+        cb1_0.name,
+        cb1_0.parents_name,
+        cb1_0.time,
+        cb1_0.user_id,
+        cb1_0.village_name 
+    from
+        child_birth cb1_0 
+    where
+        cb1_0.user_id=?
+2025-05-01 12:30:42 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-01 12:30:42 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 12:30:42 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:42 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-05-01 12:30:42 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:42 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:30:42 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2025-05-01 12:30:42 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2025-05-01 12:30:43 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10408 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-05-01 12:30:43 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 12:30:44 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 12:30:44 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-05-01 12:30:44 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-05-01 12:30:44 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:44 INFO  StandardService:173 - Starting service [Tomcat]
+2025-05-01 12:30:44 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-05-01 12:30:44 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-05-01 12:30:44 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1201 ms
+2025-05-01 12:30:44 INFO  HikariDataSource:109 - HikariPool-2 - Starting...
+2025-05-01 12:30:44 INFO  HikariPool:554 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18c82d41
+2025-05-01 12:30:44 INFO  HikariDataSource:122 - HikariPool-2 - Start completed.
+2025-05-01 12:30:44 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 12:30:44 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-01 12:30:44 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 12:30:44 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 12:30:44 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 12:30:44 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 12:30:44 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:30:45 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 12:30:45 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 3e0253f2-49e5-4ed8-83aa-39bef81c3af0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 12:30:45 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 12:30:45 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-01 12:30:45 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:45 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-05-01 12:30:45 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 2.44 seconds (process running for 1390.479)
+2025-05-01 12:30:45 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2025-05-01 12:30:46 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-01 12:30:46 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 12:30:46 INFO  Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:46 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-05-01 12:30:46 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:46 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:30:46 INFO  HikariDataSource:349 - HikariPool-2 - Shutdown initiated...
+2025-05-01 12:30:46 INFO  HikariDataSource:351 - HikariPool-2 - Shutdown completed.
+2025-05-01 12:30:47 INFO  BackendAshaApplication:53 - Starting BackendAshaApplication using Java 21.0.5 with PID 10408 (C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha\target\classes started by Tejas in C:\Users\USER\Desktop\New_Projects\aasha_task_management\backend_asha)
+2025-05-01 12:30:47 INFO  BackendAshaApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 12:30:47 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 12:30:47 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2025-05-01 12:30:50 INFO  TomcatWebServer:111 - Tomcat initialized with port 8083 (http)
+2025-05-01 12:30:50 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:50 INFO  StandardService:173 - Starting service [Tomcat]
+2025-05-01 12:30:50 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-05-01 12:30:50 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2025-05-01 12:30:50 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3099 ms
+2025-05-01 12:30:50 INFO  HikariDataSource:109 - HikariPool-3 - Starting...
+2025-05-01 12:30:50 INFO  HikariPool:554 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f6aeda9
+2025-05-01 12:30:50 INFO  HikariDataSource:122 - HikariPool-3 - Start completed.
+2025-05-01 12:30:50 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 12:30:50 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-01 12:30:50 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 12:30:50 WARN  Dialect:354 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 12:30:50 INFO  pooling:157 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 12:30:50 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 12:30:50 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 12:30:50 WARN  JpaBaseConfiguration$JpaWebConfiguration:241 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 12:30:50 WARN  UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: a082263e-292b-4a70-8caf-3edab722b98a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 12:30:50 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:115 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 12:30:50 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-01 12:30:50 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8083"]
+2025-05-01 12:30:50 INFO  TomcatWebServer:243 - Tomcat started on port 8083 (http) with context path '/'
+2025-05-01 12:30:50 INFO  BackendAshaApplication:59 - Started BackendAshaApplication in 3.79 seconds (process running for 1395.809)
+2025-05-01 12:30:50 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged

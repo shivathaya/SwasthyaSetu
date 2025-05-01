@@ -9,4 +9,3 @@ public interface ChildBirthRepository extends JpaRepository<ChildBirth, Long> {
 
 	List<ChildBirth> findByUserId(Long id);
 }
-

@@ -25,34 +25,35 @@ import jakarta.servlet.http.HttpSession;
 @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class ChildBirthController {
 
-    @Autowired
-    private ChildBirthRepository childBirthRepository;
+	@Autowired
+	private ChildBirthRepository childBirthRepository;
 
-    @PostMapping("/childbirths")
-    public ResponseEntity<?> saveChildBirth(@RequestBody ChildBirth childBirth,HttpSession session,HttpServletRequest request) {
-    	System.out.println("Session ID: " + session.getId());
-        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        
-    	//Principal principal = request.getUserPrincipal();
-        if (principal instanceof AshaUser) {
-            AshaUser loggedInUser = (AshaUser) principal;
-            childBirth.setUserId(loggedInUser.getId());
-            childBirthRepository.save(childBirth);
-            return ResponseEntity.ok(childBirth);
-        } else {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("User is not authenticated!");
-        }
-    }
+	@PostMapping("/childbirths")
+	public ResponseEntity<?> saveChildBirth(@RequestBody ChildBirth childBirth, HttpSession session,
+			HttpServletRequest request) {
+		System.out.println("Session ID: " + session.getId());
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
-    @GetMapping("/childbirths")
-    public ResponseEntity<List<ChildBirth>> getAllChildBirths() {
-        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        AshaUser loggedInUser = (AshaUser) principal;
-        if (principal instanceof AshaUser) {
-            List<ChildBirth> childbirths = childBirthRepository.findByUserId(loggedInUser.getId());
-            return ResponseEntity.ok(childbirths);
-        } else {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
-    }
+		// Principal principal = request.getUserPrincipal();
+		if (principal instanceof AshaUser) {
+			AshaUser loggedInUser = (AshaUser) principal;
+			childBirth.setUserId(loggedInUser.getId());
+			childBirthRepository.save(childBirth);
+			return ResponseEntity.ok(childBirth);
+		} else {
+			return ResponseEntity.status(HttpStatus.FORBIDDEN).body("User is not authenticated!");
+		}
+	}
+
+	@GetMapping("/childbirths")
+	public ResponseEntity<List<ChildBirth>> getAllChildBirths() {
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		AshaUser loggedInUser = (AshaUser) principal;
+		if (principal instanceof AshaUser) {
+			List<ChildBirth> childbirths = childBirthRepository.findByUserId(loggedInUser.getId());
+			return ResponseEntity.ok(childbirths);
+		} else {
+			return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+		}
+	}
 }
